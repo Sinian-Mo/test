@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>小莫之家</h1>
+            <p class="subtitl">员工管理系统</p>
+        </div>
+    </header>
+    <main>
+        <div class="seach-box">
+            <input type="text" id="searchInpunt" placeholder="搜索员工姓名、部门、职位...">
+            <select id="deptFilter">
+                <option value="">所有部门</option>
+            </select>
+        </div>
+
+        <div class="stats">
+            <span>员工总数：<strong id="totalCount">0</strong></span>
+        </div>
+
+        <div class="employee-grid" id="employeeGrid"></div>
+        <div class="no-result" id="noResult" style="display: none;">
+            <p>没有匹配到员工</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>©2026小莫之家|员工管理系统</p>
+        </div>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+</html>
